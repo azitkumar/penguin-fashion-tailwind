@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,33 +10,44 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        penguin:'#FFFBF0',
+                    }
+                }
             }
-          }
         }
-      </script>
+    </script>
 </head>
+
 <body>
-<!-- Header section start  -->
-   <header>
-<section class="container mx-auto"> 
-    <h1 class=" text-6xl text-bold uppercase"> 
-        <span class="text-amber-500"> be the Penguin</span>
-        <br>
-        <span class="text-emerald-700">of winter</span>
-    </h1>
-    <p>Lorem Ipsum is simply dummy text of the <br>
- printing and typesetting industry.</p>
-</section>
-<!-- Header section end  -->
-   </header>
-   
-   
-   
-    
+    <!-- Header section start  -->
+    <header>
+        <section class=" container mx-auto sm:flex  items-center justify-around bg-penguin pb-32 pt-12 ">
+            <div class=" px-5 space-y-4">
+                <h1 class="text-2xl sm:text-5xl font-bold uppercase">
+                    <span class="text-amber-500"> be the Penguin</span>
+                    <br>
+                    <span class="text-emerald-700">of winter</span>
+                </h1>
+                <p>Lorem Ipsum is simply dummy text of the <br>
+                    printing and typesetting industry.</p>
+                <button class=" px-0.5 uppercase bg-[#A4BC46] py-3 px-5 rounded-lg text-white 
+                tex-semibold">buy now</button>
+            </div>
+            <div class=" px-5 pt-8 sm:pt-0">
+                <img class="w-1/2 sm:w-full" src="images/model.png" alt="">
+            </div>
+            
+         </section>
+        <!-- Header section end  -->
+    </header>
+
+
+
+
 </body>
+
 </html>
